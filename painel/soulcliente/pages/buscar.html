@@ -1,0 +1,43 @@
+
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">Procurar profissionais</h1>
+	</div>
+	<!-- /.col-lg-12 -->
+</div>
+
+<div class="form-group col-md-4">            
+	<label for="">Tipo de serviço:  </label>
+	<select ng-model="find.servico" id="" class="form-control col-md-2">
+		<option  value="cabeleireiro">Cabeleireiro (a)</option>
+		<option  value="manicure">Manicure e Pedicure</option>
+		<option  value="manicure_mao">Manicure</option>						                                
+		<option  value="manicure_pe">Pedicure</option>						
+		<option  value="massagista">Massagista</option> 
+		<option  value="escovista">Escovista</option> 
+		<option  value="depiladora">Depiladora</option> 
+	</select>
+	<br/><br/><br/><br/>
+	<button class="btn btn-default" ng-click="find_servico()" type="button"><i class="fa fa-search"></i>&nbsp;Buscar</button>            
+</div>
+<!--Tabela de acordo com o resultado do JSON, depois do evendo find_servico()-->
+<table class="table col-md-12">
+	<thead class="thead-dark">
+		<tr>				  
+			<th scope="col">Nome</th>
+			<th scope="col">Serviço prestado</th>
+
+			<th scope="col">Preço</th>
+			<th scope="col"></th>	
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="x in find.table">				  
+			<td>{{x.nome}}</td>				  
+			<td>{{x.descricao}}</td>
+			<td>R$ {{x.valor}}</td>
+			<td><a ng-click="page('agendar')" class="btn btn-success">Agendar Serviço</a> </td> 
+		</tr>
+
+	</tbody>
+</table>		   	

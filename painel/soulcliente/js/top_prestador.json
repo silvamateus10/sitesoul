@@ -1,0 +1,18 @@
+[
+	{
+		"nome":"Daniel",
+		"descricao":"teste",
+		"media": 5.0
+	},
+	{
+		"nome":"mateus",
+		"descricao":"teste",
+		"media": 4.8
+	},
+	{
+		"nome":"alguem",
+		"descricao":"teste",
+		"media": 4.5
+	}
+]
+

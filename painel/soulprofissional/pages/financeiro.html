@@ -1,0 +1,38 @@
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header"></h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+	
+
+		<div class="col-lg-12">
+            <h3><b>Valor disponível para tranferência:</b> R$ 1.748, 21 </h3>
+			<button type="button" class="btn btn-success" id="button-contato" style="margin-top: 10px;">Tranferir</button>
+			
+        </div>
+		<div class="col-lg-12">
+              <h1 class="page-header"></h1>
+        </div>		
+		<form>
+			<div class="form-group col-md-12"> 
+			<label for="">Banco</label>
+            <input type="text" class="form-control" ng-model="financeiro.banco" placeholder="Digite seu Número do cartão"> 
+		</div>		
+		
+		 <div class="form-group col-md-4""> 
+			<label for="">Agência</label>
+			<input type="text" class="form-control" ng-model="financeiro.agencia" placeholder="Digite a validade do cartão"> 
+		</div>
+        <div class="form-group col-md-6""> 
+			<label for="">Conta</label>
+			<input type="text" class="form-control" ng-model="financeiro.conta" placeholder="Digite a validade do cartão"> 
+		</div>
+		
+								
+		<div class="form-group col-md-12"> 
+			<button type="button" class="btn btn-primary" ng-click="send_financeiro()" style="margin-top: 10px;">Salvar dados</button>
+		</div>
+		</form>	           
+      

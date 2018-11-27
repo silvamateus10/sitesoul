@@ -1,0 +1,19 @@
+[
+	{
+		"nome":"Daniel",
+		"descricao":"Descrição do serviço prestado",
+		"valor": 50.00
+	},
+	{
+		"nome":"mateus",
+		"descricao":"Descrição do serviço prestado",
+		"valor": 55.00
+	},
+	{
+		"nome":"alguem",
+		"descricao":"Descrição do serviço prestado",
+		"valor": 45.00
+	}
+]
+
+

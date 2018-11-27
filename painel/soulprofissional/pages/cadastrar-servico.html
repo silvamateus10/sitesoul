@@ -1,0 +1,91 @@
+
+      
+			<div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Cadastrar Serviço</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+	<form>	
+		   <div class="form-group col-md-6">
+                <label for="">Tipo de serviço</label>
+                    <select ng-model="servico.nome" class="form-control">
+                        <option  value="cabeleireiro">Cabeleireiro (a)</option>
+						<option  value="manicure">Manicure e Pedicure</option>
+						<option  value="manicure_mao">Manicure</option>						                                
+						<option  value="manicure_pe">Pedicure</option>						
+						<option  value="massagista">Massagista</option> 
+						<option  value="escovista">Escovista</option> 
+						<option  value="depiladora">Depiladora</option>  
+                    </select>
+            </div>			
+		<div class="form-group col-md-6"> 
+			<label for="preco">Preço</label>
+			<input type="text" class="form-control"  ng-model="servico.preco" placeholder=""> 
+		</div>		
+        <div class="form-group col-md-12"> 
+			<label for="descricao">Descrição</label><br/>
+			<textarea ng-model="servico.descricao" class="form-control" cols="35" rows="5"></textarea>
+		</div>
+            <div class="form-group col-md-6"> 
+            <label for="preco">Intervalo de tempo do atendimento: </label>
+            <input type="text" class="form-control"  ng-model="servico.intervalo" placeholder=""> 
+        </div>  
+		  <div class="form-group col-md-12">
+                                            <label>Dias disponíveis:</label>
+											<div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.domingo">Domingo
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.segunda">Segunda
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.terca">Terça
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.quarta">Quarta
+                                                </label>
+                                            </div>
+											<div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.quinta">Quinta
+                                                </label>
+                                            </div>
+											<div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.sexta">Sexta
+                                                </label>
+                                            </div>
+											<div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" ng-model="servico.dias.sabado">Sábado
+                                                </label>
+                                            </div>											
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label>Período disponível:</label>
+                                            <label class="checkbox-inline">
+                                                <input ng-model="servico.periodo.manha" type="checkbox">Manhã
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input ng-model="servico.periodo.tarde" type="checkbox">Tarde
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input ng-model="servico.periodo.noite" type="checkbox">Noite
+                                            </label>
+											<label class="checkbox-inline">
+                                                <input ng-model="servico.periodo.madrugada" type="checkbox">Madrugada
+                                            </label>
+                                        </div>
+                               
+		<div class="form-group col-md-12"> 
+			<button type="button" class="btn btn-primary" ng-click="send_servico()" style="margin-top: 10px;">Cadastrar</button>
+		</div>			
+    </form>       

@@ -1,0 +1,33 @@
+	
+
+			<div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Cartão</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+		<form>
+			<div class="form-group col-md-12"> 
+			<label for="nr_cartao">Número*</label>
+            <input type="text" ng-model="cartao.numero" class="form-control"  placeholder="Digite seu Número do cartão"> 
+		</div>
+		
+		<div class="form-group col-md-12"> 
+			<label for="nm_cartao_cli">Nome*</label>
+			<input type="text" class="form-control" ng-model="cartao.nome"  placeholder="Digite o nome que está cartão"> 
+		</div>
+		
+        <div class="form-group col-md-6"> 
+			<label for="validade">Validade*</label>
+			<input type="text" class="form-control" ng-model="cartao.validade" placeholder="Digite a validade do cartão"> 
+		</div>
+		<div class="form-group col-md-4"> 
+			<label for="cod_seguranca">CCV*</label>
+            <input type="text" class="form-control" ng-model="cartao.ccv"  placeholder="Código de Segurança"> 
+		</div>
+				
+	 <div class="form-group col-md-12"> 
+        <button type="button" class="btn btn-primary" ng-click="send_cartao()" style="margin-top: 10px;">Salvar dados</button>
+		</div>
+			</form>            
+
